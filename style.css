@@ -596,54 +596,55 @@ footer{
   }
 }
 
-<div class="services-gallery">
+/* ===================== SERVICES GALLERY ===================== */
 
-  <!-- SISÄSIIVOUS -->
+.services-gallery{
+  margin-top:70px;
+}
 
-  <div class="gallery-section">
+.gallery-section{
+  margin-bottom:60px;
+}
 
-    <h3>Sisäsiivous</h3>
+.gallery-section h3{
+  font-size:1.7rem;
 
-    <div class="gallery-grid">
+  color:#58a6ff;
 
-      <img src="sisasiivous1.jpg" alt="Sisäsiivous">
+  margin-bottom:20px;
 
-      <img src="sisasiivous2.jpg" alt="Auton sisäsiivous">
+  text-align:left;
+}
 
-    </div>
+.gallery-grid{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
 
-  </div>
+.gallery-grid img{
+  width:240px;
+  height:160px;
 
-  <!-- MYLLYTYS -->
+  object-fit:cover;
 
-  <div class="gallery-section">
+  border-radius:18px;
 
-    <h3>Myllytys</h3>
+  border:1px solid rgba(255,255,255,0.08);
 
-    <div class="gallery-grid">
+  transition:0.35s ease;
 
-      <img src="myllytys1.jpg" alt="Myllytys">
+  background:#111;
+}
 
-      <img src="myllytys2.jpg" alt="Auton kiillotus">
+.gallery-grid img:hover{
+  transform:
+  translateY(-5px)
+  scale(1.02);
 
-    </div>
+  border-color:
+  rgba(88,166,255,0.5);
 
-  </div>
-
-  <!-- DRONE -->
-
-  <div class="gallery-section">
-
-    <h3>Dronekuvaus</h3>
-
-    <div class="gallery-grid">
-
-      <img src="drone1.jpg" alt="Dronekuva">
-
-      <img src="drone2.jpg" alt="Dronekuvaus">
-
-    </div>
-
-  </div>
-
-</div>
+  box-shadow:
+  0 0 30px rgba(88,166,255,0.18);
+}
