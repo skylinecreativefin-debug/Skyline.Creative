@@ -70,7 +70,7 @@ nav a:hover{
   text-align:center;
   padding:20px;
 
-  background:
+  background:red;
   linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
   url("hero.lol.png")
   center/cover no-repeat;
