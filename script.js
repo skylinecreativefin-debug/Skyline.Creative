@@ -24,14 +24,6 @@ hiddenElements.forEach((el) => {
   observer.observe(el);
 });
 
-const glow = document.querySelector(".mouse-glow");
-
-document.addEventListener("mousemove", (e) => {
-
-  if(glow){
-
-    glow.style.left = e.clientX + "px";
-    glow.style.top = e.clientY + "px";
 
   }
 
