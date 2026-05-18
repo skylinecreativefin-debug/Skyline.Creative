@@ -573,3 +573,23 @@ footer{
   opacity:1;
   transform:translateY(0);
 }
+.card,
+.pricing-card{
+  animation:floatCard 5s ease-in-out infinite;
+}
+
+@keyframes floatCard{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
