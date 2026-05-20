@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Varaa aika | Skyline Creative</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">Skyline Creative</div>
+
+  <div class="menu-btn">☰</div>
+
+  <nav>
+    <a href="index.html">Etusivu</a>
+    <a href="hinnasto.html">Palvelut</a>
+    <a href="ajanvaraus.html">Varaa aika</a>
+    <a href="tietoa.html">Tietoa</a>
+    <a href="yhteystiedot.html">Yhteystiedot</a>
+  </nav>
+
+</header>
+
+<section class="booking-hero">
+
+  <div class="booking-overlay"></div>
+
+  <div class="booking-content">
+
+    <div class="tag">
+      Skyline Creative
+    </div>
+
+    <h1>Varaa aika tai pyydä tarjous</h1>
+
+    <p>
+      Auton sisäsiivouksiin voit varata ajan suoraan lomakkeella.
+      Myllytykset, dronekuvaukset ja verkkosivut suunnitellaan erikseen,
+      joten niistä voit lähettää tarjouspyynnön alempaa.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- ===================== AJANVARAUS ===================== -->
+
+<section class="booking-form-section">
+
+  <div class="booking-form-box">
+
+    <h2>Auton sisäsiivous — ajanvaraus</h2>
+
+    <form action="https://formspree.io/f/meedazkl" method="POST">
+
+      <input type="text" name="Nimi" placeholder="Nimi" required>
+
+      <input type="tel" name="Puhelin" placeholder="Puhelinnumero" required>
+
+      <input type="email" name="Sähköposti" placeholder="Sähköpostiosoite" required>
+
+      <input type="text" name="Auto" placeholder="Auton merkki ja malli" required>
+
+      <input
+      type="text"
+      name="Osoite"
+      placeholder="Osoite (sisäsiivous tehdään asiakkaan kotipihassa)"
+      required>
+
+      <label>Valitse päivä</label>
+
+      <input type="date" id="datePicker" name="Päivä" required>
+
+      <label>Valitse kellonaika</label>
+
+      <select id="timeSelect" name="Kellonaika" required>
+        <option value="">Valitse ensin päivä</option>
+      </select>
+
+      <textarea
+      name="Lisätiedot"
+      placeholder="Lisätiedot / auton kunto / mahdolliset toiveet"></textarea>
+
+      <button type="submit" class="btn">
+        Lähetä ajanvaraus
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- ===================== TARJOUSPYYNTÖ ===================== -->
+
+<section class="booking-form-section">
+
+  <div class="booking-form-box">
+
+    <h2>Tarjouspyyntö / yhteydenotto</h2>
+
+    <p style="margin-bottom:30px; color:#cfcfcf; line-height:1.8;">
+      Myllytykset, dronekuvaukset ja verkkosivut suunnitellaan aina
+      asiakkaan tarpeiden mukaan. Lähetä tarjouspyyntö ja otamme yhteyttä.
+    </p>
+
+    <form action="https://formspree.io/f/meedazkl" method="POST">
+
+      <input type="text" name="Nimi" placeholder="Nimi" required>
+
+      <input type="tel" name="Puhelin" placeholder="Puhelinnumero" required>
+
+      <input type="email" name="Sähköposti" placeholder="Sähköpostiosoite" required>
+
+      <select name="Palvelu" required>
+
+        <option value="">Valitse palvelu</option>
+
+        <option value="Myllytys 1-step">
+          Myllytys 1-step
+        </option>
+
+        <option value="Myllytys 2-step">
+          Myllytys 2-step
+        </option>
+
+        <option value="Dronekuvaus">
+          Dronekuvaus
+        </option>
+
+        <option value="Verkkosivut">
+          Verkkosivut
+        </option>
+
+      </select>
+
+      <textarea
+      name="Lisätiedot"
+      placeholder="Kerro mitä tarvitset / millainen projekti kyseessä"
+      required></textarea>
+
+      <button type="submit" class="btn">
+        Lähetä tarjouspyyntö
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Skyline Creative</p>
+</footer>
+
+</body>
+</html>
