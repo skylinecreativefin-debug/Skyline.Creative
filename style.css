@@ -888,3 +888,37 @@ footer{
     padding-top:140px;
   }
 }
+/* ===================== SERVICE BUTTONS ===================== */
+
+.service-btn{
+  display:inline-block;
+
+  margin-top:25px;
+
+  padding:14px 22px;
+
+  border-radius:14px;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  background:#58a6ff;
+
+  color:white;
+
+  transition:0.3s;
+}
+
+.service-btn:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 0 25px rgba(88,166,255,0.25);
+}
+
+.ghost-btn{
+  background:transparent;
+
+  border:1px solid rgba(255,255,255,0.12);
+}
