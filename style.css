@@ -131,7 +131,7 @@ nav a:hover::after{
   url("hero.jpg")
   center center / cover no-repeat;
 
-  animation:heroZoom 18s ease-in-out infinite alternate;
+ 
 }
 
 .hero-overlay{
@@ -176,15 +176,7 @@ nav a:hover::after{
   );
 }
 
-@keyframes heroZoom{
 
-  from{
-    background-size:100%;
-  }
-
-  to{
-    background-size:110%;
-  }
 
 }
 
