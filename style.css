@@ -209,8 +209,14 @@ nav a:hover::after{
 
 .hero h1{
   font-size:4rem;
-  line-height:1.1;
+  line-height:1.2;
   margin-bottom:20px;
+
+  color:white;
+
+  text-shadow:
+  0 0 25px rgba(0,0,0,0.45);
+}
 }
 
 .hero p{
